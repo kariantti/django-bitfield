@@ -113,7 +113,7 @@ class BitField(BigIntegerField):
         for num, flag in enumerate(flags):
             if isinstance(flag, (tuple, list)):
                 flags[num] = flag[0]
-                labels.append(flag[1])
+                labels.append(u"%s" % flag[1])
             else:
                 labels.append(flag)
 
